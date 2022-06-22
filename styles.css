@@ -28,6 +28,14 @@ button {
   font-family: sans-serif;
 }
 
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fffbf7;
+}
+
 li {
   display: inline;
   margin: 0 25px 0;
@@ -82,4 +90,112 @@ li {
 .main {
   margin-top: 140px;
   text-align: center;
+}
+
+.publish {
+  /* container styles if any */
+  margin-left: 30px;
+}
+
+.publish h3 {
+  font-family: 'Fascinate', cursive;
+  font-size: 40px;
+  line-height: 48px;
+  color: #025157;
+}
+
+.publish > p {
+  font-size: 16px;
+  color: #343434;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.publish > form {
+  display: flex;
+}
+
+.publish > form p {
+  color: #025157;
+  margin-right: 18px;
+}
+
+.promo {
+  display: flex;
+  width: 70%;
+  margin: 100px auto;
+  align-items: center;
+}
+
+iframe {
+  display: flex;
+  margin: auto;
+}
+
+.explanatory-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.explanatory-video img {
+  width: 120px;
+  margin-top: 10px;
+}
+.features{
+  display: grid;
+  height: 660px;
+  grid-template: repeat(2,1fr) /repeat(2,1fr);
+  background-color: #025157;
+  padding: 5% 10%;
+}
+.features .features-card {
+  margin-bottom: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: rgb(198, 225, 238);
+  border: 1px solid #d6cbcb;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.features .features-card .features-contenido {
+  padding: 30px 20px 40px 40px;
+  flex: 2;
+}
+.features .features-card .features-contenido > * {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+.features .features-card .features-contenido img {
+  width: 50px;
+}
+
+.features .features-card .features-contenido h3 {
+  font-size: 24px;
+  color: #2f5f55;
+  font-weight: 400;
+}
+.features .features-card .features-contenido p {
+  font-size: 16px;
+  color: #521919;
+  font-weight: 400;
+}
+.features .features-card .features-contenido a {
+  font-size: 16px;
+  color: #4bcc1d;
+  font-weight: 600;
+  text-decoration: none;
+}
+.features .features-card .features-imagen {
+  flex: 1;
+  width: 40%;
+  position: relative;
+  right: -50px;
+  height: 80%;
+}
+.features .features-card .features-imagen figure, .features .features-card .features-imagen img {
+  margin-top: 0;
+  height: 100%;
 }
